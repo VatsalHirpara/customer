@@ -1,4 +1,4 @@
-package com.nagarro.customer.Customer.impl;
+package com.nagarro.customer.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
