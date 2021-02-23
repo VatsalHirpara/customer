@@ -11,7 +11,7 @@ import com.nagarro.customer.domain.Customer;
 import com.nagarro.customer.service.CustomerService;
 
 @RestController
-@RequestMapping(value = "/customer")
+@RequestMapping(value = "/customers")
 public class CustomerController {
 
     @Autowired
