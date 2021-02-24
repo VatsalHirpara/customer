@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Notification {
+	private Integer customerId;
 	private String email;
 	private String title;
 	private String text;
