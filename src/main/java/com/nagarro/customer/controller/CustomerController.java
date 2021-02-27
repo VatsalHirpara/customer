@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.nagarro.customer.domain.Customer;
+import com.nagarro.customer.domain.CustomerEntity;
 import com.nagarro.customer.domain.Notification;
 import com.nagarro.customer.service.CustomerService;
 import com.nagarro.customer.service.NotificationService;
@@ -24,7 +24,7 @@ public class CustomerController {
     NotificationService notificationService;
     
     @GetMapping
-    public List<Customer> getCustomers() {
+    public List<CustomerEntity> getCustomers() {
 	return customerService.getAllCustomers();
     }
     

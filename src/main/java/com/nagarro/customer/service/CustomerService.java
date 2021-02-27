@@ -2,10 +2,10 @@ package com.nagarro.customer.service;
 
 import java.util.List;
 
-import com.nagarro.customer.domain.Customer;
+import com.nagarro.customer.domain.CustomerEntity;
 
 public interface CustomerService {
 
-    public List<Customer> getAllCustomers();
+    public List<CustomerEntity> getAllCustomers();
 
 }
