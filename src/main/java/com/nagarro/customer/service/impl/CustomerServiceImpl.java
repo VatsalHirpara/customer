@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
+import javax.validation.Valid;
 
 import org.springframework.stereotype.Service;
 
@@ -46,5 +47,14 @@ public class CustomerServiceImpl implements CustomerService {
     public List<CustomerEntity> getAllCustomers() {
 	return this.customersList;
     }
+
+	@Override
+	public CustomerEntity getCustomerById(@Valid Integer id) throws Exception {
+		for (CustomerEntity customerEntity : customersList) {
+			if (customerEntity.getId() == id)
+				return customerEntity;
+		}
+		throw new Exception("No worker found for given id");
+	}
 
 }
